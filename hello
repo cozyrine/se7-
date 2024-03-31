@@ -1,0 +1,16 @@
+stages: 
+  - build 
+  - test
+  - deploy
+buildjob: 
+  stage : build
+    script :
+      - echo "My first code" 
+testjob : 
+  stage : test
+  script : 
+    - echo "My second code"
+deployjob : 
+  stage : deploy 
+  script : 
+    - echo "My third code"
